@@ -1,9 +1,9 @@
 H1N1-London-2009
 ================
 
-The recent article ["Capturing the time-varying drivers of an epidemic using stochastic dynamical systems"][1], written in 
-collaboration with [Kostas Kalogeropoulos][2] and [Marc Baguelin][3], provides with a generic solution to monitor the 
-evolution of key parameters as the effective transmission rate during an epidemic. 
+We illustrate here a generic solution to monitor the transmission rate of a pathogen during an epidemic from incomplete and uncertain 
+measures of it spreads among a population. These techniques were introduced in [a recent article][1] written in 
+collaboration with [Kostas Kalogeropoulos][2] and [Marc Baguelin][3]. 
 
 The proposed methodology relies on compartmental models in which some parameters are allowed to vary over time
 following a diffusion. It then helps to understand what are the underlying and unobserved causes of observed epidemic 
