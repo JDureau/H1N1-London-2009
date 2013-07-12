@@ -12,6 +12,10 @@ dynamics. We illustrated this approach on a time series of H1N1 cases recorded i
 
 ![data](https://raw.github.com/JDureau/H1N1-London-2009/master/images/data.png?login=JDureau&token=c5b1e3d648591265b128978f10a0bcee)
 
+We show that according to the model we use, the effective transmission rate of H1N1 evolved in the following way:
+
+![data](https://raw.github.com/JDureau/H1N1-London-2009/master/images/beta.png?login=JDureau&token=c5b1e3d648591265b128978f10a0bcee)
+
 The original article relied on the use of the [particle Markov Chain Monte Carlo algorithm][4], and proposed a solution for 
 its robust and automatic calibration to facilitate further analog studies on stochastic compartmental models. 
 
@@ -19,10 +23,27 @@ For the sake of transparency, and to foster potential new applications of the pr
 the means to easily reproduce the results presented in the article. It relies on the [library of inference methods][5]
 developed in collaboration with Sébastien Ballesteros as part the the [PLOM.IO project][6].
 
+Reproducing the results:
+------------------------
+
+Data is contained in the data folder, in the csv format. Additionally, the folder SEIR_beta_t contains json files that 
+define a model and link it to the data, following the [PLOM.IO grammar][6]. To generate the code and play with the model
+yourself, simply [install the package][7], and compile the model with:
+
+plom build -t mle.json --local
+
+The joint posterior density of paths and parameters can be explored with:
+
+plom pipe mle.json | ./pmcmc psr --full -M 10000 -a 0.98
+
+
+
 
 [1]: http://arxiv.org/abs/1203.5950       "Capturing the time-varying drivers of an epidemic using stochastic dynamical systems"
 [2]: http://stats.lse.ac.uk/kalogeropoulos/ "Kostas Kalogeropoulos"
 [3]: http://www.lshtm.ac.uk/aboutus/people/baguelin.marc "Marc Baguelin"
 [4]: http://www.stats.ox.ac.uk/~doucet/andrieu_doucet_holenstein_PMCMC.pdf "Particle Markov Chain Monte Carlo"
 [5]: https://github.com/plom-io/plom-pipe "plom-pipe"
-[6]: www.plom.io "PLOM.IO"
+[6]: http://plom.io/cli/grammar "PLOM.IO grammar"
+[7]: http://plom.io/cli "workflow"
+
