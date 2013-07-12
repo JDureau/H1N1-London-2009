@@ -21,12 +21,12 @@
  "metadata": [
     {
       "id": "N",
-      "source": "data/N.csv",
+      "source": "../data/N.csv",
       "comment": "Initial population sizes"
     },
     {
       "id": "prop",
-      "source": "data/prop.csv",
+      "source": "../data/prop.csv",
       "comment": "proportion of the population under surveillance"
     }
   ]
