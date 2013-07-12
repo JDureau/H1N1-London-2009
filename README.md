@@ -12,6 +12,10 @@ dynamics. We illustrated this approach on a time series of H1N1 cases recorded i
 
 ![data](https://raw.github.com/JDureau/H1N1-London-2009/master/images/data.png?login=JDureau&token=c5b1e3d648591265b128978f10a0bcee)
 
+We show that according to the model we use, the effective transmission rate of H1N1 evolved in the following way:
+
+![data](https://raw.github.com/JDureau/H1N1-London-2009/master/images/beta.png?login=JDureau&token=c5b1e3d648591265b128978f10a0bcee)
+
 The original article relied on the use of the [particle Markov Chain Monte Carlo algorithm][4], and proposed a solution for 
 its robust and automatic calibration to facilitate further analog studies on stochastic compartmental models. 
 
