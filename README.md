@@ -10,7 +10,7 @@ following a diffusion. It then helps to understand what are the underlying and u
 dynamics. We illustrated this approach on a time series of H1N1 cases recorded in London during the 2009 pandemic 
 (courtesy of the Health Protection Agency):
 
-![data](https://github.com/JDureau/H1N1-London-2009/blob/master/images/data.png)
+![data](https://raw.github.com/JDureau/H1N1-London-2009/master/images/data.png?login=JDureau&token=c5b1e3d648591265b128978f10a0bcee)
 
 The original article relied on the use of the [particle Markov Chain Monte Carlo algorithm][4], and proposed a solution for 
 its robust and automatic calibration to facilitate further analog studies on stochastic compartmental models. 
