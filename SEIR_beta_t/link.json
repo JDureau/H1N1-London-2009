@@ -1,0 +1,34 @@
+{
+  "name": "oBinomial",
+  "description": "my comment",
+
+  "observed": [
+    {
+      "id": "inc", "comment":"incidence",
+      "definition":  [{"from": "E", "to": "I"}],
+      "time_series_id": ["London__HPA__inc"],
+      "observation_id": "common"
+    }
+  ],
+
+  "parameter": [
+    {"id": "rep", "comment": "reporting rate"},
+    {"id": "phi",  "comment": "over-dispertion"}
+  ],
+
+ "observation": [
+    {
+      "id": "common", 
+      "parameter": [
+        {"id": "rep", "comment": "reporting rate"},
+        {"id": "phi",  "comment": "over-dispertion"},
+        {"id": "prop",  "comment": "proportion of the population under surveillance"}
+      ],
+      "model": {
+        "distribution": "discretized_normal",
+        "mean": "rep*prop*x",
+        "var": "rep*(1.0-rep)*prop*x + (rep*phi*prop*x)**2"
+      }
+    }
+  ]
+}

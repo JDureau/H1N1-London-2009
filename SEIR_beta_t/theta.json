@@ -1,0 +1,15 @@
+{
+  "name": "my_theta",
+  "description": "A description of the parameter set",
+
+  "parameter": {"S": {"guess": 0.8, "min":0.55, "max":1.14, "sd_transf":0.02, "transformation": "logit", "prior":"normal","partition_id": "identical_population"},
+            "E": {"guess": 1e-05, "min":1e-07, "max":1e-02, "sd_transf":0.02, "transformation": "logit","partition_id": "identical_population"},
+            "I": {"guess": 1e-05, "min":1e-07, "max":1e-02, "sd_transf":0.02, "transformation": "logit","partition_id": "identical_population"},
+            "beta": {"guess": 1, "unit":"D","min":0, "max":40, "sd_transf":0.02, "transformation": "log","partition_id": "identical_population"},
+            "v": {"guess": 1.00, "unit":"D","type":"rate_as_duration","min":0.93, "max":1.23, "sd_transf":0.2, "prior":"normal", "transformation": "log","partition_id": "identical_population"},
+            "k": {"guess": 1.56, "unit":"D","type":"rate_as_duration","min":1.55, "max":1.63, "sd_transf":0.2, "prior":"normal", "transformation": "log","partition_id": "identical_population"},
+            "vol": {"guess": 0.1, "min":0, "max":5, "sd_transf":0.02, "transformation": "log","partition_id": "identical_population","unit":"W"},
+            "rep": {"guess": 0.1, "min":0.1, "max":0.1, "sd_transf":0, "transformation": "logit","partition_id": "identical_time_series"},
+            "phi": {"guess": 0.1, "min":0.1, "max":0.1, "sd_transf":0.0, "transformation": "log","partition_id": "identical_time_series"}
+            }
+}

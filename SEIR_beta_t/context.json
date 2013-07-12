@@ -1,0 +1,33 @@
+{
+ "name": "London, UK",
+ "description": "London 2009 H1N1 pandemic data (HPA)",
+
+ "disease": ["flu"],
+
+ "population": [{"id": "London__all",
+                 "comment": "London, all age classes"}],
+
+ "time_series": [{"id": "London__HPA__inc",
+                  "population_id": ["London__all"],
+                  "comment": ""}],
+
+
+ "data": {
+	 "t0": "2009-05-25",
+         "source": "data/data.csv",
+         "comment": "my data"
+  },
+
+ "metadata": [
+    {
+      "id": "N",
+      "source": "data/N.csv",
+      "comment": "Initial population sizes"
+    },
+    {
+      "id": "prop",
+      "source": "data/prop.csv",
+      "comment": "proportion of the population under surveillance"
+    }
+  ]
+}

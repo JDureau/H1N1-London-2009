@@ -1,0 +1,25 @@
+{
+ "name": "SEIR",
+ "description": "SEIR, with time-varying transmission rate",
+
+ "state": [{"id": "S", "comment": "Susceptible"},
+           {"id": "E", "comment": "Exposed"},
+           {"id": "I", "comment": "Infectious", "tag": ["infectious"]},
+	   {"id": "R", "comment": "Recovered", "tag": ["remainder"]}],
+
+ "parameter": [{"id": "beta",   "comment": "effective transmission rate"},
+                {"id": "v",    "comment": "recovery rate"},
+                {"id": "k",    "comment": "symptoms development rate"},
+                {"id": "vol",  "comment": "volatility"}],
+
+ "model":  [ {"from": "S", "to": "E",  "rate": "beta/N*I", "tag":["transmission"], "comment":"infection"},
+             {"from": "E", "to": "I", "rate": "k", "comment":"symptoms"},
+             {"from": "I", "to": "R", "rate": "v", "comment":"recovery"}],
+
+ "diffusion": [
+   {"parameter":"beta",
+    "volatility": "vol",
+    "drift": 0.0}
+ ]
+
+}
