@@ -6,15 +6,25 @@ measures of it spreads among a population. These techniques were introduced in [
 collaboration with [Kostas Kalogeropoulos][2] and [Marc Baguelin][3]. 
 
 The proposed methodology relies on compartmental models in which some parameters are allowed to vary over time
-following a diffusion. It then helps to understand what are the underlying and unobserved causes of observed epidemic 
+following a [diffusion][8]. It then helps to understand what are the underlying and unobserved causes of observed epidemic 
 dynamics. We illustrated this approach on a time series of H1N1 cases recorded in London during the 2009 pandemic 
 (courtesy of the Health Protection Agency):
 
 ![data](https://raw.github.com/JDureau/H1N1-London-2009/master/images/data.png?login=JDureau&token=c5b1e3d648591265b128978f10a0bcee)
 
-We show that according to the model we use, the effective transmission rate of H1N1 evolved in the following way:
+The unusual shape of the epidemic trajectory, exhibiting two peaks, reflects variations of extrinsic quantities
+that drive its evolution. Holidays, and their subsequent impact on the frequency at which people meet and infect 
+each other, provide a natural explanation to the decline of the first wave. However, the additional role of climate
+on the transmissibility of influenza is also debated, and media have played an important role on individual
+awareness and behaviour. We show that according to the model we use, the effective transmission rate of H1N1 evolved 
+in the following way:
 
 ![data](https://raw.github.com/JDureau/H1N1-London-2009/master/images/beta.png?login=JDureau&token=908ed37544cffb2e67155b264bde06ba)
+
+This result confirms that holidays have been the main driver of the epidemic, and further quantifies their impact
+on the transmission rate of influenza. For example, it shows that the impact of summer holidays is about twice more 
+important than fall holidays, providing an indication on the potential impact of closing schools as a mean to 
+mitigate an epidemic.
 
 The original article relied on the use of the [particle Markov Chain Monte Carlo algorithm][4], and proposed a solution for 
 its robust and automatic calibration to facilitate further analog studies on stochastic compartmental models. 
@@ -46,4 +56,5 @@ The joint posterior density of paths and parameters can be explored with:
 [5]: https://github.com/plom-io/plom-pipe "plom-pipe"
 [6]: http://plom.io/cli/grammar "PLOM.IO grammar"
 [7]: http://plom.io/cli "workflow"
+[8]: http://en.wikipedia.org/wiki/Diffusion_process "Diffusions"
 
