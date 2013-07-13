@@ -30,11 +30,11 @@ Data is contained in the data folder, in the csv format. Additionally, the folde
 define a model and link it to the data, following the [PLOM.IO grammar][6]. To generate the code and play with the model
 yourself, simply [install the package][7], and compile the model with:
 
-plom build -t mle.json --local
+    plom build -t mle.json --local
 
 The joint posterior density of paths and parameters can be explored with:
 
-plom pipe mle.json | ./pmcmc psr --full -M 10000 -a 0.98
+    plom pipe mle.json | ./pmcmc psr --full -M 10000 -a 0.98
 
 
 
