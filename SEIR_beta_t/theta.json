@@ -9,7 +9,7 @@
       "max":1.14, 
       "sd_transf":0.02, 
       "transformation": "logit", 
-      "prior":"normal",
+      "distribution":"normal",
       "partition_id": "identical_population"
     },
     "E": {
@@ -40,20 +40,22 @@
     "v": {
       "guess": 1.00, 
       "unit":"D",
+      "ref":"Baguelin, M., Hoek, A.J.V., Jit, M., Flasche, S. and others. (2010). Vaccination against pandemic influenza A/H1N1 in England: a real-time economic evaluation. Vaccine 28, 2370–84.",
       "type":"rate_as_duration",
       "min":0.93, "max":1.23, 
       "sd_transf":0.2, 
-      "prior":"normal", 
+      "distribution":"normal", 
       "transformation": "log",
       "partition_id": "identical_population"
     },
     "k": {
       "guess": 1.56, 
       "unit":"D",
+      "ref":"Baguelin, M., Hoek, A.J.V., Jit, M., Flasche, S. and others. (2010). Vaccination against pandemic influenza A/H1N1 in England: a real-time economic evaluation. Vaccine 28, 2370–84.",
       "type":"rate_as_duration",
       "min":1.55, "max":1.63, 
       "sd_transf":0.2, 
-      "prior":"normal", 
+      "distribution":"normal", 
       "transformation": "log",
       "partition_id": "identical_population"
     },
