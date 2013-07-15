@@ -21,7 +21,7 @@ in the following way:
 
 ![data](https://raw.github.com/JDureau/H1N1-London-2009/master/images/beta.png?login=JDureau&token=908ed37544cffb2e67155b264bde06ba)
 
-This result confirms that holidays have been the main driver of the epidemic, and further quantifies their impact
+This result confirms that holidays have been the main driver of the epidemic (they're indicated by darker grey areas), and further quantifies their impact
 on the transmission rate of influenza. For example, it shows that the impact of summer holidays is about twice more 
 important than fall holidays, providing an indication on the potential impact of closing schools as a mean to 
 mitigate an epidemic.
