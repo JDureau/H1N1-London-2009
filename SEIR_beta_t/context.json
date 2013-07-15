@@ -14,7 +14,7 @@
 
  "data": {
 	 "t0": "2009-05-25",
-         "source": "data/data.csv",
+         "source": "../data/data.csv",
          "comment": "my data"
   },
 
