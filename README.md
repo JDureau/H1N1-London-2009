@@ -42,9 +42,9 @@ yourself, simply [install the package][7], and compile the model with:
 
     plom build -t map.json --local
 
-The joint posterior density of paths and parameters can be explored with:
+The joint posterior density of paths and parameters can be explored with the following command (run in the /model folder):
 
-    plom pipe map.json | ./pmcmc psr --full -M 10000 -a 0.98 -N 8 -J 1000
+    plom pipe theta.json | ./pmcmc psr --full -M 10000 -a 0.98 -N 8 -J 1000
     
 The latter takes a bit less than 20 minutes using the 8 cores of my laptop (the number of cores is determined by the N option).
 
